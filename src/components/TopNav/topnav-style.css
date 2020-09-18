@@ -1,0 +1,16 @@
+.nav__logo{
+    width: 7.5rem;
+    height: 4rem;
+    filter: brightness(400%);
+    
+}
+.nav__link{
+    font-weight: 500;
+    color: #F9A51A!important;
+}
+.nav__link-login{
+    padding: .5rem 2rem!important;
+    background: #F9A51A;
+    border-radius: 5px;
+    color: #000!important;
+}

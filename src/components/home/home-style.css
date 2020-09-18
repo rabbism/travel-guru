@@ -1,0 +1,76 @@
+.home__section{
+    background: url('../../image/home.png');
+    background-position:50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background:rgba(0,0,0,0.7);
+}
+.bannerContent{
+    margin-top: 12rem;
+    color:#ffffff;
+}
+.home__title{
+    width: 378.53px;
+    height: 116px;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 97.6842px;
+    line-height: 117px;
+    color: #FFFFFF;
+}
+.home__des{
+    width: 455px;
+    height: 80px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+}
+.home__btn{
+    padding: .5rem 2rem;
+    background: #F9A51A;
+    border-radius: 5px;
+}
+
+.slider__section{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.slider__single{
+    position: relative;
+   
+    
+}
+.slider__single-img{
+    width: 200px;
+    height: 316px;
+    border-radius: 20px;
+    margin-right:1rem;
+    overflow: hidden;
+}
+.active{
+    border: 4px solid #FBBC04;
+}
+.overlay-img{
+    background: linear-gradient(0.12deg, #000000 0.1%, rgba(0, 0, 0, 0) 69.96%);
+    position: absolute;
+    width: 200px;
+    height: 316px;
+    border-radius: 20px;
+}
+.slider__single-text{
+    position:absolute;
+    top: 250px;
+    left: 15px;
+}
+.overlay-img:hover {
+    border: 4px solid #FBBC04;
+}

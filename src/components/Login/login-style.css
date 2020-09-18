@@ -1,0 +1,45 @@
+.marginTop{
+    margin-top:8rem;
+}
+.signInSignUp__section{
+    width: 570px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.signin-btn{
+   
+    width: 100%;
+    height: 2rem;
+    background: #F9A51A;
+    border-radius: 5px;
+    border:none;
+}
+.create-ac{
+    color: #F9A51A;
+    border-bottom: 1px solid  #F9A51A;
+    cursor: pointer;
+}
+.orText{
+   
+    text-align: center;
+}
+.googleSignIn{
+    width:460px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius:100px;
+    padding:.5rem 1rem;
+    cursor: pointer;
+}
+.googleSignInIcon{
+    color: #F9A51A;
+    font-size:1.5rem;
+    margin-right: 22%;
+}
+.facebookSignInIcon{
+    color: blue;
+    font-size:1.5rem;
+    margin-right: 22%;
+}

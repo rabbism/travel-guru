@@ -1,0 +1,30 @@
+.hotel__img{
+    width:250px;
+    height:170px;
+    margin-right: 1rem
+}
+.hotel__title{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: .4rem;
+}
+
+.hotel__facility{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6A6A6A;
+
+}
+
+.hotel__rate-icon{
+    color: #F9A51A
+}
+.hotel__price-night{
+    color: #cecaca;
+}
