@@ -38,7 +38,7 @@ const BookingDetails = () => {
                                     {errors.name && <small className="text-danger">Origin Name is required</small>}<br />
 
                                     <label className="label">Destination</label>
-                                    <input className="form-control input-style" placeholder="Cox's Bazar" name="detination" ref={register({ required: true })} />
+                                    <input className="form-control input-style" placeholder="Cox's Bazar" name="destination" ref={register({ required: true })} />
                                     {errors.name && <small className="text-danger">Destination name is required</small>}<br />
                                     <div className="date__section d-flex justify-content-between mb-4">
                                         <div className="start__date">

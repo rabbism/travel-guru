@@ -16,13 +16,13 @@ export const TravelData = [
     },
     {
         id:2,
-        placeName:`Sreemongol`,
-        description:`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus aperiam quas facilis iure dolor iste vero rem quibusdam ut magnam.`
+        placeName:`Sreemangal`,
+        description:`Sreemangal is situated in Moulvibazar district in sylhet division. Sreemangal is an Upazila. It is famous for tea garden. Rain all time occurs here.`
     },
     {
         id:3,
-        placeName:`Sundarban`,
-        description:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor, voluptatibus obcaecati minus unde ipsam.`
+        placeName:`Sundarbans`,
+        description:`The Sundarbans mangrove forest, one of the largest such forests in the world (140,000 ha), lies on the delta of the Ganges, Brahmaputra and Meghna rivers on the Bay of Bengal.`
     }
 ]
 

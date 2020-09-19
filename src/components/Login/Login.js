@@ -14,7 +14,6 @@ firebase.initializeApp(firebaseConfig);
 
 const Login = () => {
 
-    // const { register, errors, getValues, handleSubmit } = useForm()
 
     const [loggedInUser, setLoggedInUser] = useContext(userContext)
     let history = useHistory();
@@ -34,26 +33,21 @@ const Login = () => {
         success: false,
 
     })
-    // console.log(user.email, user.password)
-
-    // const onSubmit = (data) => {
-    //     setUser(data)
-    // };
 
     const handleBlur = (e) => {
         let isFormValid = true;
         if (e.target.name === 'firstName') {
             isFormValid = e.target.value.length > 4
-            //  console.log(isFormValid);
+            //  console.log(isFormValid); //
         }
         if (e.target.name === 'lastName') {
             isFormValid = e.target.value.length > 4
-            //  console.log(isFormValid);
+            //  console.log(isFormValid); //
         }
 
         if (e.target.name === 'email') {
             isFormValid = /\S+@\S+\.\S+/.test(e.target.value)
-            //   console.log(isFormValid);
+            //   console.log(isFormValid); //
         }
 
 
@@ -61,7 +55,7 @@ const Login = () => {
             const isPasswordValid = e.target.value.length > 6;
             const passwordContainNumber = /\d{1}/.test(e.target.value)
             isFormValid = isPasswordValid && passwordContainNumber
-            //   console.log(isPasswordValid, passwordContainNumber)
+            //   console.log(isPasswordValid, passwordContainNumber)  //
         }
 
 
@@ -184,7 +178,7 @@ const Login = () => {
                 <Col md={6} className="mx-auto">
                     <p style={{ color: 'red' }}>{user.error}</p>
                     {
-                        user.success && <p style={{ color: 'green' }}>{newUser ? 'SignUp' : 'SingnIn'} successfully done.</p>
+                        user.success && <p style={{ color: 'green' }}>{newUser ? 'SignUp' : 'SignIn'} successfully done.</p>
                     }
                     <div className="signInSignUp__section p-3 ">
                         <form className="form-group" onSubmit={handleSubmit}>
@@ -192,21 +186,16 @@ const Login = () => {
                             {newUser && <input onBlur={handleBlur} type="text" name="firstName" placeholder="Enter First Name" className="form-control" />}
                             {newUser && <label htmlFor="lastName" className="label">Last Name</label>}
                             {newUser && <input onBlur={handleBlur} type="text" name="lastName" placeholder="Enter Last Name" className="form-control" />}
-                            {/* {newUser  && <small className="text-danger">Name is required</small>}<br /> */}
                             <label htmlFor="email" className="label">Email</label>
                             <input onBlur={handleBlur} type="email" name="email" placeholder="Enter Email" className="form-control" />
-                            {/* {!user.email  && <small className="text-danger">Email is required</small>}<br /> */}
                             <label htmlFor="password" className="label">Password</label>
                             <input onBlur={handleBlur} type="password" name="password" placeholder="Enter password" className="form-control" />
-                            {/* {!user.password && <small className="text-danger">Password is required</small>}<br /> */}
-                            {/* {newUser && <label htmlFor="confirmPassword" className="label">Confirm Password</label>}
-                            {newUser &&  <input onBlur={handleBlur} type="password" name="confirmPassword" placeholder="Confirm Password "className="form-control" />} */}
                             {
-                                newUser ? <button className="signin-btn my-3">Sign Up</button> : <button className="signin-btn my-3">SignIn</button>
+                                newUser ? <button className="signIn-btn my-3">Sign Up</button> : <button className="signIn-btn my-3">SignIn</button>
                             }
 
                         </form>
-                        <p className="text-center">{!newUser ? `Don't have an account?` : 'Have an account?'} <span className="create-ac" onClick={() => setNewUser(!newUser)}>{!newUser ? 'Create an account' : 'Sign In'}</span></p>
+                        <p className="text-center">{!newUser ? `Don't have an account?` : 'Already have an account?'} <span className="create-ac" onClick={() => setNewUser(!newUser)}>{!newUser ? 'Create an account' : 'Sign In'}</span></p>
                     </div>
 
 
